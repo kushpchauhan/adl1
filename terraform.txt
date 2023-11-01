@@ -1,0 +1,43 @@
+install terraform
+give path by creating a folder in c drive
+
+check in cmd by terraform -v
+
+now create a new folder and open it in vscode
+create file (name.tf)
+
+putcode and save:
+
+provider "aws" {
+  access_key = "AKIA55GHXTMODB3R5TXU"
+  secret_key = "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"
+  region     = "us-east-1"
+}
+
+resource "aws_instance" "terraform_sfit" {
+  ami           = "ami-01bc990364452ab3e"
+  instance_type = "t2.micro"
+}
+
+
+
+go to iam and create user 
+ 
+give policy-> administratoracess
+create user
+
+open user -> generate acess key
+
+then copy the access key and paste in vscode
+also copy the secret key also paste
+
+then open the folder in normal files and run cmd
+then give:
+terraform init
+terraform plan
+terraform apply-> value:yes
+
+check the console for created instance
+
+and then in cmd 
+terraform destroy

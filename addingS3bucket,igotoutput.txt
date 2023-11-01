@@ -1,0 +1,66 @@
+go to iam->role->createrole
+
+service lambda
+
+cloudwatchFullAcess
+S3fullAcess
+LAmbdabasicexecutionrole
+
+click on next
+give role name
+create role
+
+createa s3 bucket
+givename
+now direct create
+
+
+now create a lambda fuction
+select autihr from scratch4
+give name
+python 3.7
+use a existing role -> earlier role
+
+
+paste code:
+import json
+
+import boto3
+
+
+s3=boto3.client('s3')
+
+
+def lambda_handler(event,context):
+
+    bucket='grinalisbucket'
+
+    dataToUpload = {}
+
+    dataToUpload['PID'] = '277'
+
+    dataToUpload['DEPT'] = 'INFT'
+
+    dataToUpload['NAME'] = 'GRINAL'
+
+    dataToUpload['FILE'] = 'ABC_111'
+
+    fileName = 'ABC_111' + '.json'
+
+    uploadByteStream= bytes(json.dumps(dataToUpload).encode('UTF-8'))
+
+    s3.put_object(Bucket=bucket,Key=fileName,Body=uploadByteStream)
+
+    print('object has been uploaded')
+
+
+bucket madhe give mybucketname
+
+click on deploy
+now test
+
+create event 
+now test
+
+go to s3
+and check

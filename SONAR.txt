@@ -1,0 +1,25 @@
+Set path for sonarqube and sonar path “bin->windows->lib” is the path to be given in env variable
+Sonarscanner path is given till bin , path to be given in environment var and “PATH” ->new
+Go to c->sonarqube->bin->windows->start sonar
+Local9000
+Create new project->give name,key is generated and generate token(command is generated with token)
+Now go to sonarscanner->conf->sonarscanner-> open and give sonar.projectKey=TypeScript sonar.projectName=TypeScript sonar.projectVersion=1.0 sonar.sources=C:\sonar-scanner-5.0.1.3006-windows\conf
+Open sonarscanner->conf(where the code is) open terminal and paste token command
+View op on dashboard
+
+
+also create a python file in conf folder in sonarscanner
+
+code to paste in sonar-scanner-properties in sonarscanner
+sonar.projectKey=(nameofthepythonfile)    
+sonar.projectName=(nameofthepytohnfile)
+sonar.projectVersion=1.0
+sonar.sources=C:\sonar-scanner-5.0.1.3006-windows\conf\(nameofthepythonfile)
+
+
+for example
+for sonar scanner
+C:\Program Files\sonar-scanner-5.0.1.3006-windows\bin\sonar-scanner.bat
+
+for sonarcube
+C:\Program Files\sonarqube-10.2.1.78527\bin

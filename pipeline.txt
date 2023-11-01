@@ -1,0 +1,41 @@
+in S3 bucket ->create bucket
+give name and create
+
+go to iam user
+create role -> ec2 -> permission 
+awselasticbeanstalkwebtier
+
+next give role name
+and create role
+
+
+open beanstalk-> environment
+create envirnoment
+give name
+platform -> php
+next
+use existing service role
+ec2 instance select role
+
+next-next-create 
+after environment created 
+
+
+
+now go to code pipeline
+create pipeline
+github(version2)
+connect to github
+
+select repository
+branch name-> master
+
+skip build stage
+deploy provider->elastic beanstalk
+
+give environment name
+next....
+create pipeline
+
+now in deploy->domain->done
+

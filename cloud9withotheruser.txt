@@ -1,0 +1,18 @@
+cloud9  and created a environment
+iam user creation and created a group
+
+atachpolicies->cloud9acessenvironmentmember
+
+roles:
+awscloud9acess
+servicerolecloud9
+
+incognito
+
+iam user login then password change
+
+
+in main window we launched the cloud9 and gave access to the incognito wala user
+link copy keli
+
+and incognito madhe jaun link paste and then give acesss from the main window

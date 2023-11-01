@@ -1,0 +1,6 @@
+create bucket
+direct create
+
+open bucket and upload
+
+and then delete object and delete bucket

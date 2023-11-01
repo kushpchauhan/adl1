@@ -1,0 +1,18 @@
+create a new EC2 instance -> give name
+select ubuntu
+instance type: t2.micro 
+create a key pair -> select rsa-> ppk
+Create instance
+
+now view instance and wait till its state in runnning 
+
+now select the instance and on right top connect -> now again connect
+
+
+ pwd
+
+
+for superuser
+sudo adduser <new-username>
+sudo usermod -aG sudo <new-username>
+sudo su - <new-username>
