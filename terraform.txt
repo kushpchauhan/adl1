@@ -22,7 +22,7 @@ resource "aws_instance" "terraform_sfit" {
 
 
 go to iam and create user 
- 
+ attach policy
 give policy-> administratoracess
 create user
 
