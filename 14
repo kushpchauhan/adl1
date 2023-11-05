@@ -9,3 +9,31 @@ awslambdabasic
 
 lambda function -create
 python
+
+def lambda_handler(event,context):
+
+    bucket='grinalisbucket'
+
+    dataToUpload = {}
+
+    dataToUpload['PID'] = '277'
+
+    dataToUpload['DEPT'] = 'INFT'
+
+    dataToUpload['NAME'] = 'GRINAL'
+
+    dataToUpload['FILE'] = 'ABC_111'
+
+    fileName = 'ABC_111' + '.json'
+
+    uploadByteStream= bytes(json.dumps(dataToUpload).encode('UTF-8'))
+
+    s3.put_object(Bucket=bucket,Key=fileName,Body=uploadByteStream)
+
+    print('object has been uploaded')
+
+
+
+then check bucket
+file download 
+open in vs code
