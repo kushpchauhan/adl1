@@ -1,0 +1,11 @@
+bucket--creat
+roles creat-lambda
+
+polices
+cloudwatchfullaccess
+s3fullaccess
+awslambdabasic
+
+
+lambda function -create
+python
